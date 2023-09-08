@@ -3,8 +3,6 @@ package com.alejopp.todoapp.service;
 import java.util.List;
 import java.util.Optional;
 
-import javax.transaction.Transactional;
-
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 
@@ -14,6 +12,8 @@ import com.alejopp.todoapp.persistence.entity.Task;
 import com.alejopp.todoapp.persistence.entity.TaskStatus;
 import com.alejopp.todoapp.persistence.repository.TaskRepository;
 import com.alejopp.todoapp.service.dto.TaskInDTO;
+
+import jakarta.transaction.Transactional;
 
 @Service
 public class TaskService {
