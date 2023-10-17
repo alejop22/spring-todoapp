@@ -13,7 +13,7 @@ public class TaskInDTOToTask implements IMapper<TaskInDTO, Task> {
 
     @Override
     public Task map(TaskInDTO in) {
-        Task task = new Task();
+        Task task = Task.builder().build();
 
         task.setTitle(in.getTitle());
         task.setDescription(in.getDescription());

@@ -11,10 +11,16 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
+@AllArgsConstructor // Se genera constructor con parametros
+@NoArgsConstructor // Se genera constructor sin parametros
 @Entity
+@Builder
 @Table(name = "tasks")
 public class Task {
 
